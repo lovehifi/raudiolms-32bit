@@ -1,4 +1,5 @@
-# raudiolms-32bit
+# rAudioLMS and Squeezelite (32bit)
+For Pi 2 and Pi 3
 ------------------------
 Install script
 >
