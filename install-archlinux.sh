@@ -21,6 +21,14 @@ if [ -d "/opt/sq-git" ]; then
     systemctl stop sq.service
 fi
 
+if [ -d "/root/logitechmediaserver*" ]; then
+rm /root/logitechmediaserver*
+fi
+
+if [ -d "/root/sq32*" ]; then
+rm /root/sq32*
+fi
+
 echo "Add user"
 getent group logitechms &>/dev/null || groupadd -r logitechms >/dev/null
 getent passwd logitechms &>/dev/null || useradd -r -g logitechms -d /opt/logitechmediaserver-git -c 'Logitech Media Server' -s /bin/false logitechms >/dev/null
