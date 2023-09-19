@@ -24,3 +24,9 @@ On the contrary, if you only want to use LMS and wish to stop SQ, run the follow
 >
 > systemctl disable sq.service
 >
+>
+-----------------------
+Another thing, if you enjoy managing your music albums through LMS and want to play them on rAudio MPD, you can achieve this by:
+Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup. LMS will then have an additional option: rAudio UPnP player.
+>
+>
