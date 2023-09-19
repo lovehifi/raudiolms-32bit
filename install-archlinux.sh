@@ -5,7 +5,7 @@ if [ -d "/opt/logitechmediaserver-git" ]; then
     systemctl stop logitechmediaserver-git.service
 fi
 
-if [ -d "/opt/sq-git" ]; then
+if [ -d "/opt/sq" ]; then
     echo "Stopping Squeezelite"
     systemctl stop sq.service
 fi
