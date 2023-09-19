@@ -21,6 +21,7 @@ if [ -e /root/sq32* ]; then
 fi
 
 echo "Install Lib"
+
 rm -f /var/lib/pacman/sync/*
 pacman -Syy --noconfirm
 pacman -S --noconfirm perl
