@@ -1,15 +1,4 @@
 #!/bin/sh
-echo "Install Lib"
-rm -f /var/lib/pacman/sync/*
-pacman -Syy --noconfirm
-pacman -S --noconfirm perl
-pacman -S --noconfirm perl-io-socket-ssl
-pacman -S --noconfirm perl-net-ssleay
-pacman -S --noconfirm perl-uri
-pacman -S --noconfirm faad2
-pacman -S --noconfirm libmad
-pacman -S --noconfirm mpg123
-pacman -S --noconfirm flac libvorbis
 
 if [ -d "/opt/logitechmediaserver-git" ]; then
     echo "Stopping Logitech Media Server"
@@ -28,6 +17,18 @@ fi
 if [ -d "/root/sq32*" ]; then
 rm /root/sq32*
 fi
+
+echo "Install Lib"
+rm -f /var/lib/pacman/sync/*
+pacman -Syy --noconfirm
+pacman -S --noconfirm perl
+pacman -S --noconfirm perl-io-socket-ssl
+pacman -S --noconfirm perl-net-ssleay
+pacman -S --noconfirm perl-uri
+pacman -S --noconfirm faad2
+pacman -S --noconfirm libmad
+pacman -S --noconfirm mpg123
+pacman -S --noconfirm flac libvorbis
 
 echo "Add user"
 getent group logitechms &>/dev/null || groupadd -r logitechms >/dev/null
