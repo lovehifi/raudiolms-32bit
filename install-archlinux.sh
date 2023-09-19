@@ -77,7 +77,6 @@ systemctl enable sq.service
 systemctl restart sq.service
 echo "Finished"
 systemctl status sq.service
-	
 fi
 
 echo "Finished"
