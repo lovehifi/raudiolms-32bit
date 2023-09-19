@@ -79,10 +79,10 @@ if [ "$answer_sq" = "Yes" ]; then
     systemctl daemon-reload
     systemctl enable sq.service
     systemctl restart sq.service
-    echo "Finished"
-    systemctl status sq.service
+    echo "Finished"    
 fi
 
 echo "Finished"
+#systemctl status sq.service
 systemctl status logitechmediaserver-git.service
 
