@@ -12,8 +12,8 @@ pacman -S --noconfirm mpg123
 pacman -S --noconfirm flac libvorbis
 
 if [ -d "/opt/logitechmediaserver-git" ]; then
-    echo "Stopping logitechmediaserver.service"
-    systemctl stop logitechmediaserver.service
+    echo "Stopping logitechmediaserver"
+    systemctl stop logitechmediaserver-git.service
 fi
 
 echo "Add user"
@@ -52,10 +52,10 @@ if [ "$answer_plugins" = "Yes" ]; then
 fi
 
 
-echo "Do you want to download and install SQ? (Yes/No)"
+echo "Do you want to download and install Squeezelite? (Yes/No)"
 read answer_sq
 if [ "$answer_sq" = "Yes" ]; then
-	echo "Download SQ and Install SQ"
+	echo "Download Squeezelite and Install"
 	wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/sq32.tgz
 	tar -xzf sq32.tgz --overwrite -C /opt/
 
