@@ -5,7 +5,7 @@ Install
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/install-archlinux.sh | sh
 >
-Configure Squeezelite option (output, name...) in /opt/sq/sq.service
+Configure Squeezelite option (output, name...) in the /opt/sq/sq.service
 >
 LMS port: http://raudio.local:9000 (or raudio ip:9000)
 > 
