@@ -82,8 +82,6 @@ if [ "$answer_sq" = "Yes" ]; then
     echo "Finished"
     systemctl status sq.service
 fi
-
 echo "Finished"
-#systemctl status sq.service
 systemctl status logitechmediaserver-git.service
 
