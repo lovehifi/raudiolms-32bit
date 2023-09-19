@@ -10,7 +10,14 @@ Configure Squeezelite option (output, name...) in /opt/sq/sq.service
 ------------------------
 After installing LMS and SQ, if you want to stop LMS and only use SQ, run the following command:
 >
-> systemctl stop logitechmediaserver.service
+> systemctl stop logitechmediaserver-git.service
 >
-> systemctl disable logitechmediaserver.service
+> systemctl disable logitechmediaserver-git.service
+>
+---------------------
+On the contrary, if you only want to use LMS and wish to stop SQ, run the following command:
+>
+> systemctl stop sq.service
+>
+> systemctl disable sq.service
 >
