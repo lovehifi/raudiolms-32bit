@@ -20,6 +20,7 @@ chown -R logitechms:logitechms /opt/logitechmediaserver-git
 echo 'logitechms ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
 
 echo "Download LMS"
+cd ~
 wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/logitechmediaserver-32.pkg.tar.xz
 
 
