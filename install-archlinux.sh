@@ -77,14 +77,11 @@ read answer_sq
 if [ "$answer_sq" = "Yes" ]; then
     systemctl daemon-reload
     systemctl enable sq.service
-    systemctl restart sq.service    
+    systemctl restart sq.service
     echo "Finished"
     systemctl status sq.service
 fi
+
 echo "Finished"
-#systemctl stop logitechmediaserver-git.service
 systemctl status logitechmediaserver-git.service
 
-#echo "755"
-#sudo chmod -R 755
-# wget -O - https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/install-archlinux.sh | sh
