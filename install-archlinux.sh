@@ -54,33 +54,33 @@ systemctl restart logitechmediaserver-git.service
 echo "Do you want to download and install Squeezelite? (Yes/No)"
 read answer_sq
 if [ "$answer_sq" = "Yes" ]; then
-echo "Download Squeezelite and Install"
-wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/sq32.tgz
-tar -xzf sq32.tgz --overwrite -C /opt/
+    echo "Download Squeezelite and Install"
+    wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/sq32.tgz
+    tar -xzf sq32.tgz --overwrite -C /opt/
 
-echo "Creating systemd unit /etc/systemd/system/sq.service"
-echo "[Unit]
-Description=SQ Player
-After=local-fs.target remote-fs.target nss-lookup.target network.target
+    echo "Creating systemd unit /etc/systemd/system/sq.service"
+    echo "[Unit]
+    Description=SQ Player
+    After=local-fs.target remote-fs.target nss-lookup.target network.target
 
-[Service]
-Type=simple
-WorkingDirectory=/opt/sq
-ExecStart=/opt/sq/squeezelite32 -o default -n SQ32-rAudio -s 127.0.0.1
-Restart=always
+    [Service]
+    Type=simple
+    WorkingDirectory=/opt/sq
+    ExecStart=/opt/sq/squeezelite32 -o default -n SQ32-rAudio -s 127.0.0.1
+    Restart=always
 
-[Install]
-WantedBy=multi-user.target" > /opt/sq/sq.service || { echo "Creating systemd unit /opt/sq/sq.service failed"; exit 1; }
-ln -fs /opt/sq/sq.service /etc/systemd/system/sq.service
-
-chmod -R 755 /etc/systemd/system/sq.service
-systemctl daemon-reload
-systemctl enable sq.service
-systemctl restart sq.service
-echo "Finished"
-systemctl status sq.service
+    [Install]
+    WantedBy=multi-user.target" > /opt/sq/sq.service || { echo "Creating systemd unit /opt/sq/sq.service failed"; exit 1; }
+    
+    ln -fs /opt/sq/sq.service /etc/systemd/system/sq.service
+    chmod -R 755 /etc/systemd/system/sq.service
+    systemctl daemon-reload
+    systemctl enable sq.service
+    systemctl restart sq.service
+    
+    echo "Finished"
+    systemctl status sq.service
 fi
-
 echo "Finished"
 #systemctl stop logitechmediaserver-git.service
 systemctl status logitechmediaserver-git.service
