@@ -10,12 +10,14 @@ if [ -d "/opt/sq" ]; then
     systemctl stop sq.service
 fi
 
-if [ -d "/root/logitechmediaserver*" ]; then
-rm /root/logitechmediaserver*
+if [ -e /root/logitechmediaserver* ]; then
+    echo "Removing /root/logitechmediaserver*"
+    rm -f /root/logitechmediaserver*
 fi
 
-if [ -d "/root/sq32*" ]; then
-rm /root/sq32*
+if [ -e /root/sq32* ]; then
+    echo "Removing /root/logitechmediaserver*"
+    rm -f /root/sq32*
 fi
 
 echo "Install Lib"
