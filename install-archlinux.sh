@@ -12,8 +12,13 @@ pacman -S --noconfirm mpg123
 pacman -S --noconfirm flac libvorbis
 
 if [ -d "/opt/logitechmediaserver-git" ]; then
-    echo "Stopping logitechmediaserver"
+    echo "Stopping Logitech Media Server"
     systemctl stop logitechmediaserver-git.service
+fi
+
+if [ -d "/opt/sq-git" ]; then
+    echo "Stopping Squeezelite"
+    systemctl stop sq.service
 fi
 
 echo "Add user"
