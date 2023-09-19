@@ -20,7 +20,6 @@ chown -R logitechms:logitechms /opt/logitechmediaserver-git
 echo 'logitechms ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
 
 echo "Download LMS"
-cd ~
 wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/logitechmediaserver-32.pkg.tar.xz
 
 
@@ -30,15 +29,32 @@ systemctl daemon-reload
 systemctl enable logitechmediaserver-git.service
 systemctl restart logitechmediaserver-git.service
 
-echo "Download Plugins and Install Plugin"
-wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/material-menu.tgz
-wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/plugin-data.tgz
-wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/plugin-data.yaml.tgz
-wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/plugin-prefs.tgz
-tar -xzf material-menu.tgz --overwrite -C /opt/logitechmediaserver-git/prefs/
-tar -xzf plugin-data.yaml.tgz --overwrite -C /opt/logitechmediaserver-git/cache/
-tar -xzf plugin-prefs.tgz --overwrite -C /opt/logitechmediaserver-git/prefs/
-tar -xzf plugin-data.tgz --overwrite -C /opt/logitechmediaserver-git/cache/InstalledPlugins/Plugins/
+
+echo "Do you want to download and install Plugins? (Yes/No)"
+read answer_plugins
+if [ "$answer_plugins" = "Yes" ]; then
+
+	echo "Download Plugins and Install Plugin"
+	wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/material-menu.tgz
+	wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/plugin-data.tgz
+	wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/plugin-data.yaml.tgz
+	wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/plugin-prefs.tgz
+	tar -xzf material-menu.tgz --overwrite -C /opt/logitechmediaserver-git/prefs/
+	tar -xzf plugin-data.yaml.tgz --overwrite -C /opt/logitechmediaserver-git/cache/
+	tar -xzf plugin-prefs.tgz --overwrite -C /opt/logitechmediaserver-git/prefs/
+	tar -xzf plugin-data.tgz --overwrite -C /opt/logitechmediaserver-git/cache/InstalledPlugins/Plugins/
+fi
+
+
+echo "Do you want to download and install SQ? (Yes/No)"
+read answer_sq
+if [ "$answer_sq" = "Yes" ]; then
+	echo "Download SQ and Install SQ"
+	# wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/sq.tgz
+
+fi
+
+
 
 echo "Finished"
 #systemctl stop logitechmediaserver-git.service
