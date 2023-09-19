@@ -1,5 +1,5 @@
-# rAudioLMS and Squeezelite (32bit)
-For Pi 2 and Pi 3
+# LMS and Squeezelite (32bit) for rAudio (Arch Linux)
+Pi 2 and Pi 3
 ------------------------
 Install script
 >
