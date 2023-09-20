@@ -24,7 +24,7 @@ Want to enjoy music from your NAS using LMS-rAudio? Follow the guide in this [ht
 - LMS acts as the server while rAudio functions as the player.
 
 ## How to Use
-
+- Turn on UPNP in rAudio settings.
 - LMS web interface at IP:9000.
 - Click play, and LMS will auto-send the link to play on rAudio.
 - LMS supports direct folder playback. To scan (displaying cover art), add folders to be scanned.
