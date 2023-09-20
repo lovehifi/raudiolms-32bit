@@ -30,4 +30,4 @@ Another thing, if you enjoy managing your music albums through LMS and want to p
 Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup. LMS will then have an additional option: rAudio UPnP player.
 >
 >
-> [Why rAudio-LMS ?](https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F) 
+> ## [Why rAudio-LMS ?](https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F) 
