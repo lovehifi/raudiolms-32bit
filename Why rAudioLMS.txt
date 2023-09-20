@@ -1,5 +1,3 @@
-# rAudio-LMS
-
 ## Why LMS?
 
 ### Versatility of LMS
@@ -13,10 +11,11 @@
 - CD player.
 - Radio.
 
-## NAS Integration
+### NAS Integration
 
-Want to enjoy music from your NAS using LMS-rAudio? Follow the guide in this [https://github.com/lovehifi/lmsbub](Link to NAS Integration Guide).
-
+Want to enjoy music from your NAS using LMS-rAudio? Follow the guide in this:
+- [LMS-BubbleUPNP Server](https://github.com/lovehifi/lmsbub).
+- [Play your music on BubbleUPnP Server (Local or Internet) with rAudio](https://github.com/lovehifi/raudiobub)
 ## rAudio's Sound Strength
 
 - rAudio excels in audio output.
