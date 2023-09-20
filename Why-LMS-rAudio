@@ -1,0 +1,59 @@
+# rAudio-LMS
+
+## Why LMS?
+
+### Versatility of LMS
+
+- Play from HDD, browse and play directly from folders without scanning.
+- YouTube with personal API integration for playback.
+- Tidal: browse albums, search, and play.
+- Qobuz (similar to Tidal).
+- Spotify.
+- Deezer.
+- CD player.
+- Radio.
+
+## NAS Integration
+
+Want to enjoy music from your NAS using LMS-rAudio? Follow the guide in this [https://github.com/lovehifi/lmsbub](Link to NAS Integration Guide).
+
+## rAudio's Sound Strength
+
+- rAudio excels in audio output.
+- LMS plays everything it has to offer through rAudio.
+- LMS acts as the server while rAudio functions as the player.
+
+## How to Use
+
+- LMS web interface at IP:9000.
+- Click play, and LMS will auto-send the link to play on rAudio.
+- LMS supports direct folder playback. To scan (displaying cover art), add folders to be scanned.
+
+## Using Tidal
+
+- In LMS, go to Server menu, Basic Settings, and choose mysqueezebox.com.
+- Add your mysqueezebox account (Tidal should be added beforehand). Tidal will appear with a logged-in status.
+
+### If you don't have an account yet:
+
+- Previously, to link Tidal via mysqueezebox.com, you needed to use a VPN for a foreign location.
+- If you don't have a mysqueezebox account, go to mysqueezebox.com, create an account, and add Tidal under Apps.
+- You can use the Opera browser (with VPN enabled) to create a mysqueezebox.com account and add Tidal.
+- Afterwards, use a regular browser to access mysqueezebox.com and log into Tidal.
+- You only need to perform this setup once. If you change Tidal accounts, add it again.
+
+## Apps for Control
+
+- You can use the rAudio Android app.
+- Alternatively:
+  - For Android: Fully Kiosk Browser & Lockdown
+  - For iOS: Kiosker: Fullscreen Web Kiosk
+
+- Add your device's IP, for example: 192.168.1.2:9000 or raudio.local:9000.
+- These apps allow displaying a fixed webpage. Once added, it's readily available on subsequent launches (full screen).
+- Each time you open the app, it displays the LMS Material interface.
+- LMS Interface + Kiosk = App Control
+
+## Enhance Your Experience
+
+You can install this setup on an Android box to turn your TV screen into a display for your Pi.
