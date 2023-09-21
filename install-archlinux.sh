@@ -71,7 +71,7 @@ Restart=always
 WantedBy=multi-user.target" > /opt/sq/sq.service || { echo "Creating systemd unit /opt/sq/sq.service failed"; exit 1; }
 
 ln -fs /opt/sq/sq.service /etc/systemd/system/sq.service
-chmod -R 755 /etc/systemd/system/sq.service
+chmod -R 777 /etc/systemd/system/sq.service
 
 echo "Do you want to Active Squeezelite? (Yes/No)"
 read answer_sq
