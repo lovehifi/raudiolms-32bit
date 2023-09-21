@@ -9,7 +9,11 @@ Configure Squeezelite option (output, name...) in the /opt/sq/sq.service
 >
 LMS port: http://raudio.local:9000 (or raudio ip:9000)
 > 
-
+------------------------
+To check your DAC using the squeezelite command, you can use the -l option which lists the available audio output devices. Here's the command:
+>
+> /opt/sq/squeezelite32 -l
+>
 ------------------------
 After installing LMS and SQ, if you want to stop LMS and only use SQ, run the following command:
 >
