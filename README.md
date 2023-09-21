@@ -14,6 +14,8 @@ To check your DAC using the squeezelite command, you can use the -l option which
 >
 > /opt/sq/squeezelite32 -l
 >
+This command will list the available audio output devices, including your DAC. The output will display the names of the devices and their respective capabilities. You can then choose the appropriate device and configure it accordingly.
+>
 ------------------------
 After installing LMS and SQ, if you want to stop LMS and only use SQ, run the following command:
 >
