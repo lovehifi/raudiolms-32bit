@@ -73,6 +73,15 @@ WantedBy=multi-user.target" > /opt/sq/sq.service || { echo "Creating systemd uni
 ln -fs /opt/sq/sq.service /etc/systemd/system/sq.service
 chmod -R 777 /etc/systemd/system/sq.service
 
+hostname=$(hostname)
+replacement="http://${hostname}"
+if [ -f "/srv/http/assets/js/main.js" ]; then
+sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
+echo "Completed."
+else
+echo "File not found. Skipping..."
+fi
+
 echo "Do you want to Active Squeezelite? (Yes/No)"
 read answer_sq
 if [ "$answer_sq" = "Yes" ]; then
