@@ -47,3 +47,6 @@ Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup.
 
 --------------------
 ### If you want to use Tidal Connect on rAudio, you can try it at this [repository](https://github.com/lovehifi/tidal-raudio).
+>
+https://github.com/lovehifi/tidal-raudio
+>
