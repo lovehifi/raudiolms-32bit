@@ -42,6 +42,11 @@ Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup.
 >
 ### [Why rAudio-LMS ?](https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F) 
 ----------------------
+>
+[LMS and Squeezelite (64bit) for rAudio (Arch Linux) Pi 4](https://github.com/lovehifi/raudiolms-64bit)
+
+----------------------
+
 
 [LMS modern-skin for LMS-rAudio](https://github.com/lovehifi/lms-modern-skin)
 
