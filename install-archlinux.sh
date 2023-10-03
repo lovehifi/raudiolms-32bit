@@ -82,15 +82,15 @@ else
 echo "File not found. Skipping..."
 fi
 
-echo "Do you want to Active Squeezelite? (Yes/No)"
-read answer_sq
-if [ "$answer_sq" = "Yes" ]; then
+#echo "Do you want to Active Squeezelite? (Yes/No)"
+#read answer_sq
+#if [ "$answer_sq" = "Yes" ]; then
     systemctl daemon-reload
     systemctl enable sq.service
     systemctl restart sq.service
     echo "Finished"
     systemctl status sq.service
-fi
+#fi
 echo "Finished"
 systemctl status logitechmediaserver-git.service
 
