@@ -89,8 +89,8 @@ fi
     systemctl enable sq.service
     systemctl restart sq.service
     echo "Finished"
-    systemctl status sq.service
+    #systemctl status sq.service
 #fi
-echo "Finished"
+echo "Finished, the LMS at port 9000"
 systemctl status logitechmediaserver-git.service
 
