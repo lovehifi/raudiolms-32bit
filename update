@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/sq.service
+wget https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/sq.sh
+cp -f /tmp/sq.service /opt/sq/
+cp -f /tmp/sq.sh /opt/sq/
+chmod -R 755 /opt/sq/sq.service
+chmod -R 755 /opt/sq/sq.sh
+
+systemctl daemon-reload
+systemctl restart sq.service
+echo "Finished"
+systemctl status sq.service
