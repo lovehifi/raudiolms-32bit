@@ -39,7 +39,7 @@ Sample:
 > nano /opt/sq/sq.service
 >
 Sample:
-ExecStart=/opt/sq/squeezelite64 -o **hw:0** -n SQ32-rAudio -s 127.0.0.1 -m 00:00:00:00:00:00
+ExecStart=/opt/sq/squeezelite32 -o **hw:0** -n SQ32-rAudio -s 127.0.0.1 -m 00:00:00:00:00:00
 >
 
 >
