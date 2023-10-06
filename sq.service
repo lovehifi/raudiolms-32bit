@@ -1,0 +1,12 @@
+[Unit]
+Description=SQ Player
+After=local-fs.target remote-fs.target nss-lookup.target network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/sq
+ExecStart=/opt/sq/sq.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
