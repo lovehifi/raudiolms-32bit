@@ -49,7 +49,7 @@ Restart:
 >
 > systemctl status sq.service
 >
-Another solution helps you change the card number automatically, which is better for you if you frequently switch DACs (e.g., switching from I2S to USB).
+Another solution for Squeezelite, helps you change the card number automatically, which is better for you if you frequently switch DACs (e.g., switching from I2S to USB).
 > wget -O - https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/update | sh
 
 >
