@@ -48,6 +48,11 @@ Restart:
 > systemctl daemon-reload && systemctl restart sq.service
 >
 > systemctl status sq.service
+>
+Another solution helps you change the card number automatically, which is better for you if you frequently switch DACs (e.g., switching from I2S to USB).
+> wget -O - https://raw.githubusercontent.com/lovehifi/raudiolms-32bit/main/update | sh
+
+>
 -----------------------
 Another thing, if you enjoy managing your music albums through LMS and want to play them on rAudio MPD, you can achieve this by:
 Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup. LMS will then have an additional option: rAudio UPnP player.
