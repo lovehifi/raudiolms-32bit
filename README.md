@@ -24,13 +24,36 @@ After installing LMS and SQ, if you want to stop LMS and only use SQ, run the fo
 > systemctl disable logitechmediaserver-git.service
 >
 ---------------------
-On the contrary, if you only want to use LMS and wish to stop SQ, run the following command:
+
+
+### To play DSD via I2S DAC:
+
+1./ Active the DSDPlayer plugin on LMS.
 >
-> systemctl stop sq.service
+2./ Setting File Types on LMS: DFF and DSF formats, select Disable - Not set to Native.
 >
-> systemctl disable sq.service
+3./ Check the sound card number, run this command: 
 >
+> cat /proc/asound/cards
 >
+Sample: 
+**0** [audioinjectorpi]: audioinjector-p - audioinjector-pi-soundcard
+
+>
+4./ If the card in use is number 0. Edit and assign 0 to -o hw:0 as follows:
+>
+> nano /opt/sq/sq.service
+>
+Sample:
+ExecStart=/opt/sq/squeezelite64 -o **hw:0** -n SQ32-rAudio -s 127.0.0.1 -m 00:00:00:00:00:00
+>
+
+>
+Restart:
+>
+> systemctl daemon-reload && systemctl restart sq.service
+>
+> systemctl status sq.service
 -----------------------
 Another thing, if you enjoy managing your music albums through LMS and want to play them on rAudio MPD, you can achieve this by:
 Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup. LMS will then have an additional option: rAudio UPnP player.
