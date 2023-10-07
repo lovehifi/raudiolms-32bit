@@ -7,9 +7,9 @@ Install
 >
 Configure Squeezelite option (output, name...) in the /opt/sq/sq.service
 >
-LMS port: http://raudio.local:9000 (or raudio ip:9000)
-> 
-
+---------
+After the installation is complete, you can access LMS from your PC or phone using the web address http://ip:9000 or http://raudio:9000
+>
 ------------------------
 After installing LMS and SQ, if you want to stop LMS and only use SQ, run the following command:
 >
