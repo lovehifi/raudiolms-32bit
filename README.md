@@ -90,7 +90,9 @@ https://github.com/lovehifi/lms-modern-skin
 --------------------
 ## If you want to use Tidal Connect on rAudio
 >
-You can try it at this: https://github.com/lovehifi/tidal-raudio
+You can try it at this:
 >
 https://github.com/lovehifi/tidal-raudio
+>
+https://github.com/lovehifi/tidal-raudio-pi4
 >
