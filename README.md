@@ -63,21 +63,33 @@ Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup.
 
 
 ----------------------
-
 >
+#### Tips for using rAudio and LMS
 >
-### [Why rAudio-LMS ?](https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F) 
+https://github.com/lovehifi/addraudio
+>
+--------------
+>
+#### Why rAudio-LMS ?
+>
+https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F) 
 ----------------------
 >
-### [LMS and Squeezelite (64bit) for rAudio (Arch Linux) Pi 4](https://github.com/lovehifi/raudiolms-64bit)
+### LMS and Squeezelite (64bit) for rAudio (Arch Linux) Pi 4
+>
+https://github.com/lovehifi/raudiolms-64bit
 
 ----------------------
 
-
-### [LMS modern-skin for LMS-rAudio](https://github.com/lovehifi/lms-modern-skin)
+### LMS modern-skin for LMS-rAudio
+>
+https://github.com/lovehifi/lms-modern-skin
+>
 
 --------------------
-### If you want to use Tidal Connect on rAudio, you can try it at this [repository](https://github.com/lovehifi/tidal-raudio).
+### If you want to use Tidal Connect on rAudio
+>
+You can try it at this: https://github.com/lovehifi/tidal-raudio
 >
 https://github.com/lovehifi/tidal-raudio
 >
