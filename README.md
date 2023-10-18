@@ -62,12 +62,6 @@ Another thing, if you enjoy managing your music albums through LMS and want to p
 Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup. LMS will then have an additional option: rAudio UPnP player.
 
 
-----------------------
->
-## Tips for using rAudio and LMS
->
-https://github.com/lovehifi/addraudio
->
 --------------
 >
 ## LMS and Squeezelite (64bit) for rAudio (Arch Linux) Pi 4
@@ -95,4 +89,10 @@ https://github.com/lovehifi/tidal-raudio-pi4
 ## Why rAudio-LMS ?
 >
 https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F)
+>
+----------------------
+>
+## Tips for using rAudio and LMS
+>
+https://github.com/lovehifi/addraudio
 >
