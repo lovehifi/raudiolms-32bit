@@ -70,12 +70,6 @@ https://github.com/lovehifi/addraudio
 >
 --------------
 >
-## Why rAudio-LMS ?
->
-https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F)
->
-----------------------
->
 ## LMS and Squeezelite (64bit) for rAudio (Arch Linux) Pi 4
 >
 https://github.com/lovehifi/raudiolms-64bit
@@ -95,4 +89,10 @@ You can try it at this:
 https://github.com/lovehifi/tidal-raudio
 >
 https://github.com/lovehifi/tidal-raudio-pi4
+>
+---------------
+>
+## Why rAudio-LMS ?
+>
+https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F)
 >
