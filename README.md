@@ -64,13 +64,13 @@ Installing the UPnP Bridge plugin in LMS and enabling UPnP on your rAudio setup.
 
 ----------------------
 >
-#### Tips for using rAudio and LMS
+### Tips for using rAudio and LMS
 >
 https://github.com/lovehifi/addraudio
 >
 --------------
 >
-#### Why rAudio-LMS ?
+### Why rAudio-LMS ?
 >
 https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F) 
 ----------------------
