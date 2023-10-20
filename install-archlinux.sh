@@ -105,6 +105,7 @@ fi
     echo "Finished"
     #systemctl status sq.service
 #fi
+sudo localectl set-locale LANG=en_US.UTF-8
 echo "Finished, the LMS at port 9000"
 systemctl status logitechmediaserver-git.service
 
