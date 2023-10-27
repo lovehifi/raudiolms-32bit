@@ -1,5 +1,8 @@
-# LMS and Squeezelite (32bit) for rAudio (Arch Linux)
-Pi 2 and Pi 3
+# LMS and Squeezelite (32bit) for rAudio Pi 2 and Pi 3 (Arch Linux)
+
+>
+You have an affinity for LMS, enjoy the Material Skin interface, and are particularly accustomed to using LMS/Material Skin on mobile devices. However, there are times when you reminisce about the allure of the audio experience offered by Archphile or Rune Audio on the Arch Linux platform from many years ago. You can now relive that experience with the return of rAudio (Arch Linux). As I understand it, rAudio is a fork or spin-off of Rune Audio (after it ceased development), and I have personally compiled LMS package to make them work seamlessly on rAudio.
+>
 ------------------------
 Install 
 >
