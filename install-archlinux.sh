@@ -78,7 +78,7 @@ After=local-fs.target remote-fs.target nss-lookup.target network.target
 [Service]
 Type=simple
 WorkingDirectory=/opt/sq
-ExecStart=/opt/sq/squeezelite32 -o default -n SQ32-rAudio -s 127.0.0.1 -m 00:00:00:00:00:00
+ExecStart=/opt/sq/squeezelite32 -o default -n SQ32-rAudio -s 127.0.0.1 -m 00:00:00:00:00:00 -W
 Restart=always
 
 [Install]
