@@ -12,7 +12,7 @@ Install
 ---------
 After the installation is complete, you can access LMS from your PC or phone using the web address http://ip:9000 or http://raudio:9000
 >
-Configure Squeezelite option (output, name...) in the /opt/sq/sq.service, sq.sh
+Configure Squeezelite option (output, name...) in the /etc/systemd/system/sq.service, sq.sh
 >
 ------------------------
 After installing LMS and SQ, if you want to stop LMS and only use SQ, run the following command:
@@ -40,7 +40,7 @@ Sample:
 >
 4./ If the card in use is number 0. Edit and assign 0 to -o hw:0 as follows:
 >
-> nano /opt/sq/sq.service
+> nano /etc/systemd/system/sq.service
 >
 Sample:
 ExecStart=/opt/sq/squeezelite32 -o **hw:0** -n SQ32-rAudio -s 127.0.0.1 -m 00:00:00:00:00:00 -W
